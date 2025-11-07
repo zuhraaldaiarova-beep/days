@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 200px;
+        background: #EEAECA;
+background: radial-gradient(circle, rgba(238, 174, 202, 1) 0%, rgba(148, 187, 233, 1) 100%);
+    }
+   .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: 'Inter', 'Segoe UI', sans-serif;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 30px 40px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+    max-width: 400px;
+    margin: 0 auto;
+    width: 300px;
+    height: 200px;
+
+}
+
+.date_day {
+    text-align: left;
+}
+
+.month_year {
+    text-align: right;
+}
+
+#date {
+    font-size: 3.5rem;
+    font-weight: 800;
+    line-height: 1;
+    margin: 0;
+    margin-bottom: 5px;
+}
+
+#day {
+    font-size: 1.3rem;
+    font-weight: 500;
+    text-transform: lowercase;
+    margin: 0;
+    opacity: 0.9;
+}
+
+#month {
+    font-size: 1.6rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin: 0;
+    margin-bottom: 8px;
+}
+
+#year {
+    font-size: 1.2rem;
+    font-weight: 400;
+    margin: 0;
+    opacity: 0.8;
+}
+</style>
+<body>
+    <div class="container">
+        <div class="date_day">
+            <p id="date"></p>
+            <p id="day">Friday</p>
+
+        </div>
+        <div class="month_year">
+            <p id="month"></p>
+            <p id="year"></p>
+
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
